@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Research Point</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -16,18 +16,7 @@
       }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link href='assets/css/main.css' rel='stylesheet'>
   </head>
 
   <body>
@@ -40,12 +29,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">Research Point</a>
           <div class="nav-collapse in collapse">
             <ul class="nav">
               <li class="active"><a href="#">Search</a></li>
               <li><a href="#about">Favorites</a></li>
               <li><a href="#contact">Settings</a></li>
+              <li><a href='contact.html'>Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -54,8 +44,8 @@
 
     <div class="container">
 
-      <h1>Research Point</h1>
-      <img src="assets/img/colorful.jpeg" width="100%" style="">
+      <h2>Research Point</h2>
+      <img src="assets/img/colorful.jpeg" width="100%" height='100px' style="">
       <p>Enter in details below to search for a contact.</p>
       <br><br>
 
@@ -74,6 +64,15 @@
               <input type="checkbox"> Exact Match
             </label>
             Location:<br><input type='text' name="location" required><br>
+            <div class='showAdvancedLink'>
+                <a id='showAdvancedLink' href='#' onClick='showAdvanced()'>Show Advanced Options</a>
+            </div>
+            <div hidden="true" id='advanced'>
+                Nickname:<br><input type='text' name="Nickname" required><br>
+                Address:<br><input type='text' name="Address" required><br>
+                Spouse:<br><input type='text' name="Spouse" required><br>
+                Business:<br><input type='text' name="Business" required><br>
+            </div>
             <h4 style="padding-left:70px;"><button value="submit" class="btn btn-success">Search</button></h4>
           </form>
 
@@ -95,5 +94,20 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript">
+        function showAdvanced() {
+            $('#showAdvancedLink').hide();
+            $('#advanced').toggle();
+            // if ($('#showAdvancedLink').text() == 'Show Advanced Options') {
+            //     $('#showAdvancedLink').text('Hide Advanced Options');
+            // } else {
+            //     $('#showAdvancedLink').text('Show Advanced Options');
+            // }
+            
+        }
+    </script>
+
+
   </body>
+
 </html>
