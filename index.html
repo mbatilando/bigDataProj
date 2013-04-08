@@ -10,141 +10,90 @@
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <style type="text/css">
+    <style>
       body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-
-      @media (max-width: 980px) {
-        /* Enable use of floated navbar text */
-        .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/Chart.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
   <body>
 
-    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
+        <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Wealth Summary: Mari Batilando</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Mari Batilando</a>
-            </p>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse in collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#">Search</a></li>
+              <li><a href="#about">Favorites</a></li>
+              <li><a href="#contact">Settings</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div id="profile" class="container-fluid">
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="span6">
-            <img id="profilepic" src="assets/img/profilepic.jpg" class="avatar"></img>
-            <div id="info" style="padding-top: 0px; padding-left: 7px">
-              <b>Mari Batilando</b><br>
-              <i>Computer Scientist</i>
-            </div>
-          </div>
-          <div class="span6" style="margin-top:-30px">
-            <canvas id="canvas" height="275" width="275"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="container">
 
-    <div class="container-fluid" style="margin-top:-30px;">
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="span6">
-              <i class="icon-home"></i> <b>Real Estate</b>
-              <div class="progress progress-info">
-                <div class="bar" style="width: 30%">$1,000</div>
-              </div>
-          </div>
+      <h1>Research Point</h1>
+      <img src="assets/img/colorful.jpeg" width="100%" style="">
+      <p>Enter in details below to search for a contact.</p>
+      <br><br>
 
-            <div class="span6">
-              <i class="icon-lock"></i> <b>Business</b>
-              <div class="progress progress-success">
-                <div class="bar" style="width: 50%">$3,500</div>
-              </div>
-            </div>
-        </div>
-      </div>
+          <form name="myForm">
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Search in RP
+            </label>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Search in TA Database
+            </label>
+            <br>
+            Name:<br><input type='text' name="name" required><br>
+            <label class="checkbox" style="padding-left:40px;">
+              <input type="checkbox"> Exact Match
+            </label>
+            Location:<br><input type='text' name="location" required><br>
+            <h4 style="padding-left:70px;"><button value="submit" class="btn btn-success">Search</button></h4>
+          </form>
 
-        <div class="row-fluid">
-          <div class="span12">
-             <div class="span6">
-              <i class="icon-move"></i> <b>Securities</b>
-              <div class="progress progress-warning">
-                <div class="bar" style="width: 65%">$4,750</div>
-              </div>
-            </div>
+    </div> <!-- /container -->
 
-            <div class="span6">
-              <i class="icon-star-empty"></i> <b>Income</b>
-              <div class="progress progress-danger">
-                <div class="bar" style="width: 85%">$6,000</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="canvasrow" class="row-fluid">
-        <div class="span12">
-            
-        </div>
-    </div>
-
-  <script>
-
-    var radarChartData = {
-      labels : ["Real Estate","Business","Securities","Income"],
-      datasets : [
-        {
-          fillColor : "rgba(120,120,220,0.5)",
-          strokeColor : "rgba(220,220,220,1)",
-          pointColor : "rgba(220,220,220,1)",
-          pointStrokeColor : "#fff",
-          data : [0,0,0,0]
-        },
-        {
-          fillColor : "rgba(151,187,205,0.5)",
-          strokeColor : "rgba(151,187,205,1)",
-          pointColor : "rgba(151,187,205,1)",
-          pointStrokeColor : "#fff",
-          data : [50,35,47,60]
-        }
-      ]
-      
-    }
-
-  var myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
-  
-  </script>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
   </body>
 </html>
