@@ -73,4 +73,19 @@
 
 #navbar {
     font-color: #fff !important;
+
+}
+
+#homecontainer {
+    text-align: center;
+    border-width: 0px;
+    font-size: 20px;
+}
+
+#search {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    background-color: #fff;
+    border-width: 0px;
 }
