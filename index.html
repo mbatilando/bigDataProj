@@ -17,66 +17,53 @@
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href='assets/css/main.css' rel='stylesheet'>
+    <link href="assets/css/custom.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Research Point</a>
-          <div class="nav-collapse in collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Search</a></li>
-              <li><a href="#about">Favorites</a></li>
-              <li><a href="#contact">Settings</a></li>
-              <li><a href='contact.html'>Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+        <div id="homecontainer" class="container">
+         <div style="margin-top: 5px"><i class="icon-home" style="margin-top: 5px"></i> Wealth Management<br>
+          <div class="input-append" style="margin-top:6px">
+                <input class="span2" id="appendedInputButtons" type="text">
+                <a href="results.html" class="btn btn-inverse"><i class="icon-white icon-search"></i></a>
+          </div>
+         </div>
         </div>
       </div>
-    </div>
+     </div>
 
-    <div class="container">
+                <div class="container" style="margin-top: 50px">
+                    <div class="row">
+                        <div class="span6 offset3">
+                            <form class="form-horizontal">
+                              <div class="control-group">
+                                <label class="control-label" for="inputEmail">Email</label>
+                                <div class="controls">
+                                  <input type="text" id="inputEmail" placeholder="Email">
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <label class="control-label" for="inputPassword">Password</label>
+                                <div class="controls">
+                                  <input type="password" id="inputPassword" placeholder="Password">
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <div class="controls">
+                                  <label class="checkbox">
+                                    <input type="checkbox"> Remember me
+                                  </label>
+                                  <button type="submit" class="btn">Sign in</button>
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
-      <h2>Research Point</h2>
-      <img src="assets/img/colorful.jpeg" width="100%" height='100px' style="">
-      <p>Enter in details below to search for a contact.</p>
-      <br><br>
-
-          <form name="myForm">
-            <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              Search in RP
-            </label>
-            <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              Search in TA Database
-            </label>
-            <br>
-            Name:<br><input type='text' name="name" required><br>
-            <label class="checkbox" style="padding-left:40px;">
-              <input type="checkbox"> Exact Match
-            </label>
-            Location:<br><input type='text' name="location" required><br>
-            <div class='showAdvancedLink'>
-                <a id='showAdvancedLink' href='#' onClick='showAdvanced()'>Show Advanced Options</a>
-            </div>
-            <div hidden="true" id='advanced'>
-                Nickname:<br><input type='text' name="Nickname" required><br>
-                Address:<br><input type='text' name="Address" required><br>
-                Spouse:<br><input type='text' name="Spouse" required><br>
-                Business:<br><input type='text' name="Business" required><br>
-            </div>
-            <h4 style="padding-left:70px;"><button value="submit" class="btn btn-success">Search</button></h4>
-          </form>
-
-    </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
@@ -109,5 +96,4 @@
 
 
   </body>
-
 </html>
