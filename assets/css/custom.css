@@ -99,3 +99,13 @@
     background-color: #fff;
     border-width: 0px;
 }
+
+.alignRightText {
+    text-align: right;
+    float: right;
+}
+
+.alignLeftText {
+    text-align: left;
+    float: right;
+}
