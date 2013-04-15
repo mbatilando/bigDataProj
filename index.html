@@ -25,38 +25,52 @@
       <div class="navbar-inner">
         <div id="homecontainer" class="container">
          <div style="margin-top: 5px"><i class="icon-home" style="margin-top: 5px"></i> Wealth Management<br>
-          <div class="input-append" style="margin-top:6px">
-                <input class="span2" id="appendedInputButtons" type="text">
-                <a href="results.html" class="btn btn-inverse"><i class="icon-white icon-search"></i></a>
-          </div>
          </div>
         </div>
       </div>
      </div>
 
-                <div class="container" style="margin-top: 50px">
+                <div class="container">
                     <div class="row">
                         <div class="span6 offset3">
+                          <div style="text-align: center"><h3> Advanced Options</h3></div>
                             <form class="form-horizontal">
                               <div class="control-group">
-                                <label class="control-label" for="inputEmail">Email</label>
+                                <label class="control-label" for="inputEmail">Name</label>
                                 <div class="controls">
-                                  <input type="text" id="inputEmail" placeholder="Email">
+                                  <input type="text" id="inputEmail" placeholder="Last, First">
                                 </div>
                               </div>
+
                               <div class="control-group">
-                                <label class="control-label" for="inputPassword">Password</label>
+                                <label class="control-label" for="inputPassword">Address</label>
                                 <div class="controls">
-                                  <input type="password" id="inputPassword" placeholder="Password">
+                                  <input type="password" id="inputPassword" placeholder="Address">
                                 </div>
                               </div>
+
                               <div class="control-group">
+                                <label class="control-label" for="inputPassword">City</label>
                                 <div class="controls">
-                                  <label class="checkbox">
-                                    <input type="checkbox"> Remember me
-                                  </label>
-                                  <button type="submit" class="btn">Sign in</button>
+                                  <input type="password" id="inputPassword" placeholder="City">
                                 </div>
+                              </div>
+
+                              <div class="control-group">
+                                <label class="control-label" for="inputPassword">ZIP</label>
+                                <div class="controls">
+                                  <input class="input-small" type="password" id="inputPassword" placeholder="ZIP">
+                                  <select id="selectbasic" name="selectbasic" class="input-small" style="margin-left: 8px">
+                                    <option>State<option>
+                                    <option>CA</option>
+                                    <option>WA</option>
+                                  </select>
+                                  <div style="margin-left: 65px; margin-top: 8px;">
+                                    <button type="submit" class="btn btn-success btn-small"><i class="icon-user"></i>Submit</button>
+                                  </div>
+                                </div>
+                              </div>
+                                
                               </div>
                             </form>
                         </div>
