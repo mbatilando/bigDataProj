@@ -2,30 +2,9 @@
     margin: 0 auto;
 }
 
-#profile {
-    margin: 0 auto;
-    float: none;
-    text-align: center;
-    border-width: 0px;
-}
-
-#donorMainInfo {
-    margin: 0 auto;
-    float: none;
-    text-align: center;
-}
-
 #navbar {
     text-align: center;
 }
-
-.donorResInfo {
-    float: left; 
-    margin-top: 7px; 
-    padding-top: 0px; 
-    padding-left: 7px
-}
-
 
 #canvasrow {
     margin: 0 auto;
@@ -33,11 +12,36 @@
     text-align: center;
 }
 
-.confidence {
+.titleNav {
     text-align: center;
-    float: none;
+    border-width: 0px;
+    font-size: 20px;
+    margin-top: 7px
 }
 
+.backBut {
+    margin-top: -3px  !important;
+}
+
+#navbar {
+    font-color: #fff !important;
+
+}
+
+/*Index.html*/
+#homecontainer {
+    text-align: center;
+    border-width: 0px;
+    font-size: 20px;
+}
+
+/*Results.html*/
+.donorResInfo {
+    float: left; 
+    margin-top: 7px; 
+    padding-top: 0px; 
+    padding-left: 7px
+}
 #results {
     margin: 0 auto;
     float: none;
@@ -48,14 +52,6 @@
 #firstResult {
     padding-bottom: 5px;
 }
-
-.titleNav {
-    text-align: center;
-    border-width: 0px;
-    font-size: 20px;
-    margin-top: 7px
-}
-
 .searchResContainer {
     padding-bottom: 5px; 
     padding-top: 5px; 
@@ -68,8 +64,27 @@
     border-top: 1px solid gray;
  }
 
+
+/*Profile.html*/
+#profile {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    border-width: 0px;
+}
+
+.confidence {
+    text-align: center;
+    float: none;
+}
+
 #statsContainer {
     margin-top:-15px;
+}
+
+.alignRightText {
+    text-align: right;
+    float: right;
 }
 
 #realEstateBar {
@@ -88,33 +103,6 @@
     width: 85%;
 }
 
-.backBut {
-    margin-top: -3px  !important;
-}
-
-#navbar {
-    font-color: #fff !important;
-
-}
-
-#homecontainer {
-    text-align: center;
-    border-width: 0px;
-    font-size: 20px;
-}
-
-#search {
-    margin: 0 auto;
-    float: none;
-    text-align: center;
-    background-color: #fff;
-    border-width: 0px;
-}
-
-.alignRightText {
-    text-align: right;
-    float: right;
-}
 
 /*Property.html*/
 .propertyInfo {
