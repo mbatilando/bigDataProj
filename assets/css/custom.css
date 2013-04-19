@@ -67,7 +67,7 @@
     padding-top: 5px; 
     border-top: 1px solid gray;
  }
- 
+
 #statsContainer {
     margin-top:-15px;
 }
@@ -116,7 +116,11 @@
     float: right;
 }
 
-.alignLeftText {
+/*Property.html*/
+.propertyInfo {
+    float: left; 
+    margin-top: 7px; 
+    padding-top: 0px;
+    padding-left: 7px;
     text-align: left;
-    float: right;
 }
