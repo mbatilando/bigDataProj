@@ -33,12 +33,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="span6 offset3">
-                          <div style="text-align: center"><h3> Advanced Options</h3></div>
-                            <form class="form-horizontal">
+                          <div style="text-align: center"><h3>Search</h3></div>
+                            <form class="form-horizontal" action='results.html'>
                               <div class="control-group">
                                 <label class="control-label" for="inputEmail">Name</label>
                                 <div class="controls">
-                                  <input type="text" id="inputEmail" placeholder="Last, First">
+                                  <input type="text" id="inputEmail" placeholder="Last, First" required>
                                 </div>
                               </div>
 
@@ -61,16 +61,29 @@
                                 <div class="controls">
                                   <input class="input-small" type="password" id="inputPassword" placeholder="ZIP">
                                   <select id="selectbasic" name="selectbasic" class="input-small" style="margin-left: 8px">
-                                    <option>State<option>
+                                    <option>State</option>
                                     <option>CA</option>
                                     <option>WA</option>
                                   </select>
-                                  <div style="margin-left: 65px; margin-top: 18px;">
-                                    <a href="results.html" class="btn btn-success btn-medium"><i class="icon-user"></i>Submit</button></a>
-                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- HTML code for database picker -->
+                              <div class="control-group">
+                                <label class="control-label" for="inputPassword">Database</label>
+                                <div class="controls">
+                                  <select id="selectbasic" name="selectbasic" class="input-large">
+                                    <option>Research Point</option>
+                                    <option>TA</option>
+                                  </select>
                                 </div>
                               </div>
                                 
+                              <div class='controls'>
+                                <div style="margin-left: 65px; margin-top: 18px;">
+                                  <button class="btn btn-success btn-medium"><i class="icon-user"></i>Submit</button>
+                                </div>
+                              </div>
                               </div>
                             </form>
                         </div>
