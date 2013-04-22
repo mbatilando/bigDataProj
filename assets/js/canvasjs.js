@@ -1117,24 +1117,24 @@
         //this.canvas.style.borderColor = "black";
         //this.canvas.style.borderWidth = "1px";
         //this.canvas.style.borderStyle = "solid";
-        this.canvas.style.position = "absolute";
+        this.canvas.style.position = "relative";
         this._canvasJSContainer.appendChild(this.canvas);
 
 
         this.overlaidCanvas = document.createElement("canvas");
-        this.overlaidCanvas.width = width;
-        this.overlaidCanvas.height = height;
+        this.overlaidCanvas.width = 0;
+        this.overlaidCanvas.height = 0;
         //this.overlaidCanvas.style.background = this.backgroundColor;
         //this.overlaidCanvas.style.borderColor = "black";
         //this.overlaidCanvas.style.borderWidth = "1px";
         //this.overlaidCanvas.style.borderStyle = "solid";
-        this.overlaidCanvas.style.position = "absolute";
+        this.overlaidCanvas.style.position = "relative";
         this._canvasJSContainer.appendChild(this.overlaidCanvas);
 
         this._eventManager = new EventManager(this);
 
         this._toolBar = document.createElement("div");
-        this._toolBar.style.position = "absolute";
+        this._toolBar.style.position = "relative";
         this._toolBar.style.top = "0px";
         this._toolBar.style.right = "0px";
         this._canvasJSContainer.appendChild(this._toolBar);

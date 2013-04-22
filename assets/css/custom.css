@@ -106,9 +106,15 @@
     width: 85%;
 }
 
+#statsContainer {
+    z-index: 1 !important;
+}
+
 canvas {
     position: relative !important;
 }
+
+
 
 
 /*Property.html*/

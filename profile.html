@@ -11,12 +11,17 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/slider.css" />
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/canvasjs.js"></script>
+    <script src="assets/js/custom.js"></script>
     <script type="text/javascript">
       window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer",
         {
+          toolTip:{
+            enabled: false,
+          },
            data: [
           {
              type: "pie",
@@ -151,5 +156,10 @@
   var myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
   
   </script>
+
+  <div class="slider"></div>
+    <div id="slider-result">50</div>  
+  <input type="hidden" id="hidden"/>
+
   </body>
 </html>
