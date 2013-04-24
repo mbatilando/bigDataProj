@@ -125,3 +125,9 @@ canvas {
     padding-left: 7px;
     text-align: left;
 }
+
+@media screen and (max-width: 450px) {
+        h3 {
+    font-size:15px;
+    }
+}
