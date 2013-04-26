@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>My Page</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+	    <link href="assets/css/custom.css" rel="stylesheet">
+	    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	    <script src="assets/js/bootstrap.js"></script>
+	    <script src="assets/js/canvasjs.js"></script>
+	    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	    <script type="text/javascript">
+	      window.onload = function () {
+	        var chart = new CanvasJS.Chart("chartContainer",
+	        {
+	          toolTip:{
+	            enabled: false,
+	          },
+	           data: [
+	          {
+	             type: "pie",
+	           dataPoints: [
+	           {  y: 4181563, indexLabel: "Real Estate" },
+	           {  y: 2175498, indexLabel: "Businesses" },
+	           {  y: 3125844, indexLabel: "Securities" },
+	           {  y: 1176121, indexLabel: "Income"}
+	           ]
+	         }
+	         ]
+	       });
+
+	        chart.render();
+	      }
+	    </script>
+	</head>
+	<body data-theme="a"> 
+		<div data-role="header" id="hdrMain" name="hdrMain" data-nobackbtn="true">
+			<h1>Mari Batilando</h1>
+			<a href="results2.html" rel="external" data-icon="arrow-l">Back</a>
+		</div>
+
+		<div id="chartContainer" style="height: 300px; width: 100%; margin: 0 auto;">
+		</div>
+
+
+		<ul data-role="listview" data-inset="true" data-theme="d">
+			<li data-theme="a">Real Estate</li>
+			<li><a href="property2.html" rel="external" data-transition="slide">
+					<span class="ui-li-count">$1,234</span>
+					<h3>5858 Horton St. Emeryville, CA</h3>
+				</a>
+			</li>
+
+			<li data-theme="a">Businesses</li>
+			<li><a href="index.html">
+					<span class="ui-li-count">$6,580</span>
+					<h3>1234 Yolo St. Redmond, WA</h3>
+				</a>
+			</li>
+
+			<li data-theme="a">Securities</li>
+			<li><a href="index.html">
+					<span class="ui-li-count">$7,274</span>
+					<h3>5432 Nayak St. Washington, WA</h3>
+				</a>
+			</li>
+
+			<li data-theme="a">Income</li>
+			<li><a href="index.html">
+					<span class="ui-li-count">$4,276</span>
+					<h3>7842 Hollis St. Berkeley, CA</h3>
+				</a>
+			</li>
+		</ul>
+
+		<div style="margin-top:15px">
+			<input type="range" name="slider-1" id="slider-1" value="5" min="0" max="5" />
+		</div>
+
+
+	</body>
+</html>
